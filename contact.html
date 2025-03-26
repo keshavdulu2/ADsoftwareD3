@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us -AD SOFTWARE</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+       
+        <h1 class="animated-title">AD SOFTWARE</h1>
+        <nav>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+        <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Get in Touch</h2>
+        <p><strong>Phone:</strong> <a href="tel:+27647223074" class="contact-link">+27 64 722 3074</a></p>
+        <p><strong>Email:</strong> <a href="mailto:keshavdulu2@gmail.com" class="contact-link">keshavdulu2@gmail.com</a></p>
+
+        <!-- Contact Form -->
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="send-message">Send Message</button>
+        </form>
+
+        <p id="form-response" class="hidden">Your message has been sent!</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact: +27 64 722 3074 | Email: keshavdulu2@gmail.com</p>
+    </footer>
+
+</body>
+</html>

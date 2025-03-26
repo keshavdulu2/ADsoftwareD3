@@ -1,0 +1,191 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(45deg, #00c8ff, #e100ff);
+    color: white;
+    transition: background 0.5s, color 0.5s;
+}
+
+/* Header */
+header {
+    background: rgba(52, 26, 168, 0.8);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(45deg, #00c8ff, #e100ff);
+    padding: 15px 20px;
+    border-radius: 7px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.nav-link:hover {
+   background: #00c8ff, #e100ff;
+    color: #00c2f3;
+    box-shadow: 0 0 10px#6200ff;
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px 20px;
+    font-size: 22px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Learn More Button */
+.learn-more {
+    padding: 12px 24px;
+    font-size: 18px;
+    background: #00d9ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.learn-more:hover {
+    transform: scale(1.1);
+    background: #00c6ff;
+}
+
+/* Animated Title */
+.animated-title {
+    font-size: 30px;
+    font-weight: bold;
+    animation: glowingText 3s infinite alternate;
+}
+
+/* Dark Mode Button */
+.dark-mode-toggle {
+    padding: 10px;
+    background: #1a4174;
+    color: white;
+    border: #00c6ff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dark-mode-toggle:hover {
+    background: #00c6ff;
+}
+
+/* Footer */
+footer {
+    background: #000000;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes glowingText {
+    0% { text-shadow: 0 0 5px rgb(255, 255, 255); }
+    100% { text-shadow: 0 0 20px rgb(0, 255, 255); }
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: black;
+    color: lightblue;
+}
+/* About Us Section */
+.about {
+    padding: 60px 20px;
+    font-size: 20px;
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.219);
+}/* Contact Section */
+.contact {
+    padding: 60px 20px;
+    font-size: 20px;
+    max-width: 600px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Clickable Contact Info */
+.contact-link {
+    color: cyan;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-link:hover {
+    color: #00c6ff;
+    text-decoration: underline;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+}
+
+/* Send Message Button */
+.send-message {
+    padding: 12px 20px;
+    font-size: 18px;
+    background: #0072ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.send-message:hover {
+    transform: scale(1.1);
+    background: #00c6ff;
+}
+
+/* Message Sent Response */
+.hidden {
+    display: none;
+    color: lightgreen;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
